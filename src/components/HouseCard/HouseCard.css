@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900");
+@import url("https://cdn.linearicons.com/free/1.0.0/icon-font.min.css");
+
+h1 {
+    color: #FCFBFA;
+}
+
+.container_foto {
+    background-color: rgba(57, 62, 93, 0.7);
+    padding: 0;
+    overflow: hidden;
+    max-width: 350px;
+    margin: 20px 40px 20px 0px;
+}
+
+.container_foto article {
+    transform: translate(2px, -300px);
+    -webkit-transform: translate(2px, -300px);
+    -moz-transform: translate(2px, -300px);
+    -o-transform: translate(2px, -300px);
+    -ms-transform: translate(2px, -300px);
+    z-index: 1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.container_foto h2 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 25px;
+    border-bottom: #fff solid 1px;
+}
+
+.container_foto h4 {
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+}
+
+.container_foto img {
+    margin-top: -100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    -webkit-transition: all 4s ease;
+    -moz-transition: all 4s ease;
+    -o-transition: all 4s ease;
+    -ms-transition: all 4s ease;
+    transition: all 4s ease;
+}
+
+/*hovers*/
+
+.container_foto:hover {
+    cursor: pointer;
+}
+
+.container_foto:hover img {
+    opacity: 0.1;
+    transform: scale(1.5);
+}
+
+.container_foto:hover article {
+    transform: translate(2px, 250px);
+    -webkit-transform: translate(2px, 250px);
+    -moz-transform: translate(2px, 250px);
+    -o-transform: translate(2px, 250px);
+    -ms-transform: translate(2px, 250px);
+}
+
+@media screen and (max-width: 768px) {
+    .container_foto {
+        background-color: rgba(57, 62, 93, 0.7);
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 90%;
+        margin: 0 auto;
+        max-height: 350px;
+        margin: 5px;
+    }
+    .container_foto article {
+        padding: 10%;
+    }
+    .container_foto:hover article {
+        transform: translate(2px, 120px);
+        -webkit-transform: translate(2px, 120px);
+        -moz-transform: translate(2px, 120px);
+        -o-transform: translate(2px, 120px);
+        -ms-transform: translate(2px, 120px);
+    }
+
+    .container_foto img {
+        margin-top: -300px;
+        height: 100%;
+        transform: scale(1.2);
+    }
+
+    .container_foto:hover img {
+        transform: scale(1.2);
+    }
+}
